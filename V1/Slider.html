@@ -1,0 +1,35 @@
+<!-- START Slider -->					
+
+<link rel="stylesheet" type="text/css" href="SiteAssets/css/slider.css" />
+<script type="text/javascript" src="SiteAssets/JS/jquery-1.10.2.min.js">//<![CDATA[//]]></script>
+<script type="text/javascript" src="SiteAssets/JS/jquery.SPServices-0.7.2.min.js">//<![CDATA[//]]></script>
+<script type="text/javascript" src="SiteAssets/JS/affirma-sp-base.js" ></script>
+
+<script type="text/javascript">
+
+var cssWeb = {
+	
+	getHeroSliderImages : function(callback){
+		affirmasp.getList('{a8f0eb9c-d784-46ee-86c6-333818fd7a06}',callback, {
+			logFields : true,
+			query		: '<Query><OrderBy><FieldRef Name="order0"/></OrderBy></Query>',
+		});	
+	}
+};
+</script>
+
+<script type="text/javascript" src="SiteAssets/JS/home-slider.js" ></script>
+
+				<div class="row">
+					<div id="image-slider" class="column column-100">
+						<div class="slide-mask">
+							<div id="slide-container"></div>
+						</div>
+						<div id="slide-info-mask">
+							<div id="slide-info-container"></div>
+							<div id="slider-icons"></div>
+						</div>
+					</div><!--image-slider-->
+				</div><!--row-->
+				
+<!-- END Slider -->

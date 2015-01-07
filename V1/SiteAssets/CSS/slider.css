@@ -1,0 +1,94 @@
+﻿#image-slider {
+	width:100%;
+	height:430px;
+	height:370px;
+	position:relative;
+}
+#slide-mask {
+	width:100%; 
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+#slide-info-mask {
+	width:410px;
+	height:370px;
+	background-color:#7f7f7f;
+	position:absolute; top:0; 
+	z-index:100;
+}
+#slide-info-mask h2 {
+	font-family: "Segoe UI Light";
+	font-size: 28px;
+	padding: 10px 0 10px 0;
+	margin: 0;
+	font-weight: lighter;
+	color: #fff;
+	/*text-transform:capitalize;*/
+}
+#slide-info-mask p,
+#slide-info-mask span,
+#slide-info-mask div {
+	color: #fff;
+}
+#slide-info-mask p {
+	font-size: 16px;
+	line-height: 18px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+}
+#slider-icons {
+	position:absolute; bottom:15px; left:20px;
+}
+.slide, .slide-info, .slide-icon {
+	-webkit-transition: 1s opacity ease-out; -moz-transition: 1s opacity ease-out; transition: 1s opacity ease-out;
+	
+}
+
+.slide {
+	 position:absolute;
+	 right:0;
+	 top:0;
+	 opacity:0;
+	 
+}
+.slide img {
+	width:100%;
+}
+.slide.active {
+	opacity:1;
+	z-index:1;
+}
+#slide-1 {
+	display:block;
+}
+.slide-icon{
+	cursor:pointer;
+	background-color:rgb(225,225,225); 
+	opacity:.5;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	float:left; margin-right:10px;
+}
+.slide-icon.active {
+	background-color:#FFF;
+	opacity:1;
+}
+.slide-info {
+	padding: 12px 15px;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+}
+.slide-info.active {
+	opacity:1;
+}
+#slide-info-1 {
+	display:block;
+}
+.row{
+	padding-top:15px;
+}
